@@ -3,6 +3,18 @@ const wrap1 = document.getElementById("wrap1");
 let allImages = wrap.getElementsByTagName("img");
 console.log(allImages);
 
+function myFunction() {
+  document.getElementById("tiktok").className = "mystyle";
+}
+
+let elems = document.querySelectorAll('#wrap img');
+// elem.style.cssText = 'border: solid gold 4px;'; // let elem = document.querySelector('#wrap img')
+for (let i = 0; i < elems.length; i++) {
+    elems[i].style= 'border: solid gold 4px;';
+    
+}
+
+
 let gallery = document.createElement("div");
 gallery.style = "border: solid red 2px; min-height: 20px;";
 wrap1.appendChild(gallery);
